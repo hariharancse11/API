@@ -15,7 +15,7 @@ quotes = [
     "The purpose of our lives is to be happy. - Dalai Lama",
 ]
 
-@app.route('/random-quote', methods=['GET'])
+@app.route('/', methods=['GET'])
 def get_random_quote():
     random_quote = random.choice(quotes)
     return jsonify({'quote': random_quote})
